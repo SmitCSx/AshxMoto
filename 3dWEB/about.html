@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About AshxMoto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      padding: 2rem;
+      background: #1f1f1f;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #ffa500;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #ffa500;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="index.html" class="nav-link">Home</a>
+</nav>
+
+<header>
+  <h1>About AshxMoto</h1>
+  <p>Blender Modeling, Real-Time Rendering & Web Integration</p>
+</header>
+
+<section>
+  <h2> Motivation & Concept</h2>
+  <p>
+    AshxMoto was created as a passion project combining my love for motorcycles, design, and interactive web experiences.
+    The idea was to present customized bikes and gear in an immersive 3D environment — blending aesthetic form with digital function.
+  </p>
+
+  <h2>Tools & Workflow</h2>
+  <p>
+    All models were crafted in Blender, with animations and shaders fine-tuned manually. I exported them as <code>.glb</code> files to
+    preserve performance and animations. For the front-end rendering, I used <strong>Three.js</strong>, applying lighting,
+    orbit controls, and animation handlers to bring each bike and helmet to life.
+  </p>
+
+  <p>
+    The project also includes sound integration, lighting tweaks via GUI, animation triggering,
+    and full camera control — all designed to replicate a dynamic showroom feel.
+  </p>
+
+  <div class="image-grid">
+    <img src="media/nix.png" alt="Wireframe and viewport of nix">
+    <img src="media/omx.png" alt="Classic bike wireframe">
+    <img src="media/helli.png" alt="Helmet animation setup">
+    <img src="media/anime.png" alt="Oldman animation camera view">
+    <img src="media/animation.gif" alt="Animation Demo" />
+  </div>
+
+  <h2> Credits & Acknowledgments</h2>
+  <p>
+    All models are designed by me from scratch using Blender.
+    The rendering is powered by Three.js. Special thanks to online communities that helped me debug and push this project further.
+    Sound was recorded using my friend's old bike and edited to loop.
+  </p>
+
+  <p>
+    Feel free to explore the <a href="index.html">home page</a> and try the interactive models.
+  </p>
+</section>
+
+<footer>
+  &copy; 2025 AshxMoto — Built with ❤️ in code and mesh
+</footer>
+
+</body>
+</html>

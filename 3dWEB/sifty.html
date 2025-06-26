@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sifty Bike Viewer</title>
+  <link rel="stylesheet" href="css/models.css" />
+</head>
+<body data-model="sifty">
+  <header>
+    <div class="title">Sifty Model Viewer</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="nix.html">Nix</a>
+      <a href="oldman.html">Oldman</a>
+    </nav>
+  </header>
+
+  <div id="loading-spinner">Loading Sifty model...</div>
+  <main>
+    <a href="index.html" id="homeBtn">Home</a>
+
+    <div id="viewer"></div>
+    <div class="controls">
+      <button onclick="openModel()">Reset Camera</button>
+      <button onclick="toggleWireframe()">Toggle Wireframe</button>
+      <button onclick="toggleRotation()">Rotate</button>
+      <button id="nextModelBtn" onclick="goToNextModel()">Next Model</button>
+      <button id="animBtn" onclick="toggleAnimation()">Check it out</button>
+    </div>
+    <div id="cam-coords">Camera: x: 0, y: 0, z: 0</div>
+  </main>
+
+  <script type="module" src="js/sifty.js"></script>
+</body>
+</html>

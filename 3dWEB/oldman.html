@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oldman Bike Viewer</title>
+  <link rel="stylesheet" href="css/models.css" />
+</head>
+<body data-model="oldman">
+  <header>
+    <div class="title">Oldman Model Viewer</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="nix.html">Nix</a>
+      <a href="sifty.html">Sifty</a>
+    </nav>
+  </header>
+
+  <div id="loading-spinner">Loading Oldman model...</div>
+  <main>
+    <div id="viewer"></div>
+    <div class="controls">
+      <button onclick="openModel()">Reset Camera</button>
+      <button onclick="toggleWireframe()">Toggle Wireframe</button>
+      <button onclick="toggleRotation()">Rotate</button>
+      <button id="nextModelBtn" onclick="goToNextModel()">Next Model</button>
+      <button id="engineBtn" onclick="startEngine()">Start Engine</button>
+      <button id="animBtn" onclick="toggleAnimation()">Have a test drive!</button>
+    </div>
+  </main>
+
+  <script type="module" src="js/models.js"></script>
+</body>
+</html>
